@@ -81,6 +81,10 @@ p {
   font-size: 1em;
 }
 
+.brown {
+  color: #cc6410;
+}
+
 /* bloc TEST */
 .test {
   color: #26524e;
@@ -308,6 +312,78 @@ p {
 
 @media (max-width: 767px) {
   .space-between {
+    font-size: 0.7rem;
+  }
+}
+
+.space-between-marron {
+  color: #cc6410;
+  font-size: 0.9em;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .space-between-marron {
+    font-size: 0.7rem;
+  }
+}
+
+.space-between-violet {
+  color: #a6699b;
+  font-size: 0.9em;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .space-between-violet {
+    font-size: 0.7rem;
+  }
+}
+
+.space-between-bleu {
+  color: #905BFD;
+  font-size: 0.9em;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .space-between-bleu {
     font-size: 0.7rem;
   }
 }
@@ -929,7 +1005,8 @@ p {
   width: 50%;
 }
 
-.example-lechic {
+.example-marron {
+  color: #cc6410;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -945,7 +1022,7 @@ p {
   margin: 0 0 5px;
 }
 
-.example-lechic .hover {
+.example-marron .hover {
   font-size: 32px;
   text-align: center;
   margin: 0 auto;
@@ -955,7 +1032,7 @@ p {
   position: relative;
 }
 
-.example-lechic .hover:before, .example-lechic .hover:after {
+.example-marron .hover:before, .example-marron .hover:after {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -970,40 +1047,198 @@ p {
   background-color: #b4580e;
 }
 
-.example-lechic .hover.hover-1:before, .example-lechic .hover.hover-1:after {
+.example-marron .hover.hover-1:before, .example-marron .hover.hover-1:after {
   left: 0;
 }
 
-.example-lechic .hover.hover-2:before, .example-lechic .hover.hover-2:after {
+.example-marron .hover.hover-2:before, .example-marron .hover.hover-2:after {
   right: 0;
 }
 
-.example-lechic .hover.hover-3:before {
+.example-marron .hover.hover-3:before {
   left: 50%;
 }
 
-.example-lechic .hover.hover-3:after {
+.example-marron .hover.hover-3:after {
   right: 50%;
 }
 
-.example-lechic .hover.hover-4:before {
+.example-marron .hover.hover-4:before {
   left: 0;
 }
 
-.example-lechic .hover.hover-4:after {
+.example-marron .hover.hover-4:after {
   right: 0;
 }
 
-.example-lechic:hover {
+.example-marron:hover {
   cursor: pointer;
 }
 
-.example-lechic:hover .hover:before, .example-lechic:hover .hover:after {
+.example-marron:hover .hover:before, .example-marron:hover .hover:after {
   width: 100%;
   opacity: 1;
 }
 
-.example-lechic:hover .hover.hover-3:before, .example-lechic:hover .hover.hover-3:after, .example-lechic:hover .hover.hover-4:before, .example-lechic:hover .hover.hover-4:after {
+.example-marron:hover .hover.hover-3:before, .example-marron:hover .hover.hover-3:after, .example-marron:hover .hover.hover-4:before, .example-marron:hover .hover.hover-4:after {
+  width: 50%;
+}
+
+.example-violet {
+  color: #a6699b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font: bold;
+  width: 30%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 5px;
+}
+
+.example-violet .hover {
+  font-size: 32px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.example-violet .hover:before, .example-violet .hover:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 0px;
+  height: 5px;
+  margin: 5px 0 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition-duration: 0.75s;
+          transition-duration: 0.75s;
+  opacity: 0;
+  background-color: #9a5b8f;
+}
+
+.example-violet .hover.hover-1:before, .example-violet .hover.hover-1:after {
+  left: 0;
+}
+
+.example-violet .hover.hover-2:before, .example-violet .hover.hover-2:after {
+  right: 0;
+}
+
+.example-violet .hover.hover-3:before {
+  left: 50%;
+}
+
+.example-violet .hover.hover-3:after {
+  right: 50%;
+}
+
+.example-violet .hover.hover-4:before {
+  left: 0;
+}
+
+.example-violet .hover.hover-4:after {
+  right: 0;
+}
+
+.example-violet:hover {
+  cursor: pointer;
+}
+
+.example-violet:hover .hover:before, .example-violet:hover .hover:after {
+  width: 100%;
+  opacity: 1;
+}
+
+.example-violet:hover .hover.hover-3:before, .example-violet:hover .hover.hover-3:after, .example-violet:hover .hover.hover-4:before, .example-violet:hover .hover.hover-4:after {
+  width: 50%;
+}
+
+.example-bleu {
+  color: #905BFD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font: bold;
+  width: 30%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 5px;
+}
+
+.example-bleu .hover {
+  font-size: 32px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.example-bleu .hover:before, .example-bleu .hover:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 0px;
+  height: 5px;
+  margin: 5px 0 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition-duration: 0.75s;
+          transition-duration: 0.75s;
+  opacity: 0;
+  background-color: #7f42fd;
+}
+
+.example-bleu .hover.hover-1:before, .example-bleu .hover.hover-1:after {
+  left: 0;
+}
+
+.example-bleu .hover.hover-2:before, .example-bleu .hover.hover-2:after {
+  right: 0;
+}
+
+.example-bleu .hover.hover-3:before {
+  left: 50%;
+}
+
+.example-bleu .hover.hover-3:after {
+  right: 50%;
+}
+
+.example-bleu .hover.hover-4:before {
+  left: 0;
+}
+
+.example-bleu .hover.hover-4:after {
+  right: 0;
+}
+
+.example-bleu:hover {
+  cursor: pointer;
+}
+
+.example-bleu:hover .hover:before, .example-bleu:hover .hover:after {
+  width: 100%;
+  opacity: 1;
+}
+
+.example-bleu:hover .hover.hover-3:before, .example-bleu:hover .hover.hover-3:after, .example-bleu:hover .hover.hover-4:before, .example-bleu:hover .hover.hover-4:after {
   width: 50%;
 }
 
@@ -1037,16 +1272,18 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
   /* standard gradient background */
   background: -webkit-gradient(linear, left top, right top, from(#cc6410), color-stop(#a45be9), to(#905BFD));
   background: linear-gradient(to right, #cc6410 0% 30%, #a45be9, #905BFD);
   /* clip hackery */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.brown {
-  color: #cc6410 0% 30%;
 }
 
 .decoration {

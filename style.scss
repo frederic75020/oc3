@@ -16,7 +16,6 @@ $mobile-width: 480px;
   src: url('typos/Courgette-Regular.ttf');
 }
 
-
 /* mixins media queries */
 @mixin desktop {
   @media (min-width: #{$desktop-width}) {
@@ -33,6 +32,7 @@ $mobile-width: 480px;
     @content;
   }
 }
+
 /* CORPS DE LA PAGE  */ 
 body {
   width: 100%;
@@ -93,6 +93,10 @@ p {
     }
     @include mobile {
     }
+}
+
+.brown {
+  color: #cc6410;
 }
 /* bloc TEST */
 .test {
@@ -223,6 +227,8 @@ p {
     }  
 }
 
+
+
 .space-between {
     font-size: 0.9em;
     width: 80%;
@@ -235,6 +241,46 @@ p {
       font-size: 0.7rem;
     }
 }
+.space-between-marron {
+  color: #cc6410;
+  font-size: 0.9em;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @include mobile {
+    font-size: 0.7rem;
+  }
+}
+.space-between-violet {
+  color: #a6699b;
+  font-size: 0.9em;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @include mobile {
+    font-size: 0.7rem;
+  }
+}
+.space-between-bleu {
+  color: #905BFD;
+  font-size: 0.9em;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @include mobile {
+    font-size: 0.7rem;
+  }
+}
+
 .centre-groupe
 {
     display: flex;
@@ -292,6 +338,7 @@ p {
 
 }
 .menu-lechic {
+
   font-family: courgette;
   background-color: #FFF5FE;
   height: auto;
@@ -624,8 +671,9 @@ $animate: all 0.2s ease-in-out;
     }
 }
 
-.example-lechic {
+.example-marron {
   
+  color: #cc6410;
   display: flex;
   font: bold;
   width: 30%;
@@ -699,6 +747,160 @@ $animate: all 0.2s ease-in-out;
     }
   }
 }
+
+.example-violet {
+  
+  color: #a6699b; 
+  display: flex;
+  font: bold;
+  width: 30%;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: 0 0 5px;
+  .hover {
+  font-size: 32px;
+  text-align: center;
+  margin: 0 auto;
+    padding: 0;
+    transition: $animate;
+    position: relative;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      width: 0px;
+      height: 5px;
+      margin: 5px 0 0;
+      transition: $animate;
+      transition-duration: 0.75s;
+      opacity: 0;
+      background-color: darken(rgb(166, 105, 155),5%);
+    }
+    &.hover-1 {
+      &:before,
+      &:after {
+        left: 0;
+      }
+    }
+    &.hover-2 {
+      &:before,
+      &:after {
+        right: 0;
+      }
+    }
+    &.hover-3 {
+      &:before {
+        left: 50%;
+      }
+      &:after {
+        right: 50%;
+      }
+    }
+    &.hover-4 {
+      &:before {
+        left: 0;
+      }
+      &:after {
+        right: 0;
+      }
+    }
+  }
+  &:hover {
+    cursor: pointer;
+    .hover {
+      &:before,
+      &:after {
+        width: 100%;
+        opacity: 1;
+      }
+      &.hover-3,
+      &.hover-4 {
+        &:before,
+        &:after {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+.example-bleu {
+  
+  color: #905BFD; 
+  display: flex;
+  font: bold;
+  width: 30%;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: 0 0 5px;
+  .hover {
+  font-size: 32px;
+  text-align: center;
+  margin: 0 auto;
+    padding: 0;
+    transition: $animate;
+    position: relative;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      width: 0px;
+      height: 5px;
+      margin: 5px 0 0;
+      transition: $animate;
+      transition-duration: 0.75s;
+      opacity: 0;
+      background-color: darken(rgb(144, 91, 253),5%);
+    }
+    &.hover-1 {
+      &:before,
+      &:after {
+        left: 0;
+      }
+    }
+    &.hover-2 {
+      &:before,
+      &:after {
+        right: 0;
+      }
+    }
+    &.hover-3 {
+      &:before {
+        left: 50%;
+      }
+      &:after {
+        right: 50%;
+      }
+    }
+    &.hover-4 {
+      &:before {
+        left: 0;
+      }
+      &:after {
+        right: 0;
+      }
+    }
+  }
+  &:hover {
+    cursor: pointer;
+    .hover {
+      &:before,
+      &:after {
+        width: 100%;
+        opacity: 1;
+      }
+      &.hover-3,
+      &.hover-4 {
+        &:before,
+        &:after {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
 /* COULEURS DEGRADEES */
 
 $vert-jaune: linear-gradient(to left,darkolivegreen lightgoldenrodyellow);
@@ -744,4 +946,5 @@ $vert-jaune: linear-gradient(to left,darkolivegreen lightgoldenrodyellow);
   margin-bottom: 2%;
   transform: rotate(180deg);
 }
+
 
