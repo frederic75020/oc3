@@ -256,29 +256,9 @@ p {
 }
 .space-between-marron {
   color: #cc6410;
-  font-size: 0.9em;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  @include mobile {
-    font-size: 0.7rem;
-  }
 }
 .space-between-violet {
   color: #a6699b;
-  font-size: 0.9em;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  @include mobile {
-    font-size: 0.7rem;
-  }
 }
 .space-between-bleu {
   color: #905BFD;
@@ -661,13 +641,16 @@ $animate: all 0.2s ease-in-out;
     flex-flow: row nowrap;
     align-items: center;
     margin: 0 0 5px;
+    &__marron {
+      color: green;
+    }
     .hover {
     font-size: 32px;
     text-align: center;
     margin: 0 auto;
-      padding: 0;
-      transition: $animate;
-      position: relative;
+    padding: 0;
+    transition: $animate;
+    position: relative;
       &:before,
       &:after {
         content: "";
@@ -1032,5 +1015,40 @@ $vert-jaune: linear-gradient(to left,darkolivegreen lightgoldenrodyellow);
   transform: rotate(180deg) scaleY(-1);
   
 }
-
-
+/* TEST CODES OC */
+.block {
+background-color: #15DEA5;
+  &__element {
+  color: #fff;
+  }
+  &--modifier {
+  background-color: #001534;
+  }
+}
+.nav {
+  padding-right: 6rem;
+  flex: 2 1 auto;
+  text-align: right;
+  nav__link {
+  display: inline;
+  font-size: 3rem;
+  padding-left: 1.5rem;
+  nav__link--active {
+  color: #001534;
+  }
+  }
+}
+.btn {
+  background-color: #001534;
+  color: #15DEA5;
+  padding: 1.5rem;
+}
+  
+.btn-wide {
+  width: 100%;
+}
+  
+/* And... */
+.btn-rounded {
+  border-radius: 3rem;
+}
