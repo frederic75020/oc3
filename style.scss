@@ -220,7 +220,7 @@ p {
       padding: 2%; 
       }
 }
-
+/* CATEGORIES ENTREE PLAT DESSERT */
 .partie {
     width: auto;
     height: auto;
@@ -239,9 +239,9 @@ p {
       font-size: 0.9em;
     }  
 }
+/* -------------------------- */
 
-
-
+/* ELEMENTS DU MENU */
 .space-between {
     font-size: 0.9em;
     width: 80%;
@@ -251,9 +251,11 @@ p {
     flex-direction: row;
     justify-content: space-between;
     @include mobile {
-      font-size: 0.7rem;
+      font-size: 1.1rem;
     }
 }
+/* COLORATION ELEMENTS DU MENU */
+
 .space-between-marron {
   color: #cc6410;
 }
@@ -262,16 +264,6 @@ p {
 }
 .space-between-bleu {
   color: #905BFD;
-  font-size: 0.9em;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  @include mobile {
-    font-size: 0.7rem;
-  }
 }
 
 .centre-groupe
@@ -547,6 +539,7 @@ p {
     }
 }
 /* animation avec frames */
+
 .btn-mentions {
     background-color: $fond-header-footer;
     color: $typo-header-footer;
@@ -641,11 +634,8 @@ $animate: all 0.2s ease-in-out;
     flex-flow: row nowrap;
     align-items: center;
     margin: 0 0 5px;
-    &__marron {
-      color: green;
-    }
     .hover {
-    font-size: 32px;
+    font-size: 1.2rem;
     text-align: center;
     margin: 0 auto;
     padding: 0;
@@ -713,32 +703,11 @@ $animate: all 0.2s ease-in-out;
 }
 
 .example-marron {
-  
   color: #cc6410;
-  display: flex;
-  font: bold;
-  width: 30%;
-  flex-flow: row nowrap;
-  align-items: center;
-  margin: 0 0 5px;
   .hover {
-  font-size: 32px;
-  text-align: center;
-  margin: 0 auto;
-    padding: 0;
-    transition: $animate;
-    position: relative;
     &:before,
     &:after {
       content: "";
-      position: absolute;
-      bottom: -10px;
-      width: 0px;
-      height: 5px;
-      margin: 5px 0 0;
-      transition: $animate;
-      transition-duration: 0.75s;
-      opacity: 0;
       background-color: darken(rgb(204, 100, 16),5%);
     }
     &.hover-1 {
@@ -789,34 +758,13 @@ $animate: all 0.2s ease-in-out;
   }
 }
 
-.example-violet {
-  
-  color: #a6699b; 
-  display: flex;
-  font: bold;
-  width: 30%;
-  flex-flow: row nowrap;
-  align-items: center;
-  margin: 0 0 5px;
+.example-violet {  
+  color: #a6699b;
   .hover {
-  font-size: 32px;
-  text-align: center;
-  margin: 0 auto;
-    padding: 0;
-    transition: $animate;
-    position: relative;
     &:before,
     &:after {
       content: "";
-      position: absolute;
-      bottom: -10px;
-      width: 0px;
-      height: 5px;
-      margin: 5px 0 0;
-      transition: $animate;
-      transition-duration: 0.75s;
-      opacity: 0;
-      background-color: darken(rgb(166, 105, 155),5%);
+      background-color: darken(rgb(166, 105, 155),5%); 
     }
     &.hover-1 {
       &:before,
@@ -865,34 +813,14 @@ $animate: all 0.2s ease-in-out;
     }
   }
 }
-.example-bleu {
-  
-  color: #905BFD; 
-  display: flex;
-  font: bold;
-  width: 30%;
-  flex-flow: row nowrap;
-  align-items: center;
-  margin: 0 0 5px;
+
+.example-bleu {  
+  color: #6E4CCC;
   .hover {
-  font-size: 32px;
-  text-align: center;
-  margin: 0 auto;
-    padding: 0;
-    transition: $animate;
-    position: relative;
     &:before,
     &:after {
       content: "";
-      position: absolute;
-      bottom: -10px;
-      width: 0px;
-      height: 5px;
-      margin: 5px 0 0;
-      transition: $animate;
-      transition-duration: 0.75s;
-      opacity: 0;
-      background-color: darken(rgb(144, 91, 253),5%);
+      background-color: darken(rgb(110, 76, 204),5%); 
     }
     &.hover-1 {
       &:before,
@@ -941,6 +869,238 @@ $animate: all 0.2s ease-in-out;
     }
   }
 }
+
+.example-bleu-fonce {  
+  color: #0128DD;
+  .hover {
+    &:before,
+    &:after {
+      content: "";
+      background-color: darken(rgb(1, 40, 221),5%); 
+    }
+    &.hover-1 {
+      &:before,
+      &:after {
+        left: 0;
+      }
+    }
+    &.hover-2 {
+      &:before,
+      &:after {
+        right: 0;
+      }
+    }
+    &.hover-3 {
+      &:before {
+        left: 50%;
+      }
+      &:after {
+        right: 50%;
+      }
+    }
+    &.hover-4 {
+      &:before {
+        left: 0;
+      }
+      &:after {
+        right: 0;
+      }
+    }
+  }
+  &:hover {
+    cursor: pointer;
+    .hover {
+      &:before,
+      &:after {
+        width: 100%;
+        opacity: 1;
+      }
+      &.hover-3,
+      &.hover-4 {
+        &:before,
+        &:after {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+.example-bleu-moyen {  
+  color: #2980F2;
+  .hover {
+    &:before,
+    &:after {
+      content: "";
+      background-color: darken(rgb(41, 128, 242),5%); 
+    }
+    &.hover-1 {
+      &:before,
+      &:after {
+        left: 0;
+      }
+    }
+    &.hover-2 {
+      &:before,
+      &:after {
+        right: 0;
+      }
+    }
+    &.hover-3 {
+      &:before {
+        left: 50%;
+      }
+      &:after {
+        right: 50%;
+      }
+    }
+    &.hover-4 {
+      &:before {
+        left: 0;
+      }
+      &:after {
+        right: 0;
+      }
+    }
+  }
+  &:hover {
+    cursor: pointer;
+    .hover {
+      &:before,
+      &:after {
+        width: 100%;
+        opacity: 1;
+      }
+      &.hover-3,
+      &.hover-4 {
+        &:before,
+        &:after {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+.example-bleu-clair {  
+  color: #2980F2;
+  .hover {
+    &:before,
+    &:after {
+      content: "";
+      background-color: darken(rgb(41, 128, 242),5%); 
+    }
+    &.hover-1 {
+      &:before,
+      &:after {
+        left: 0;
+      }
+    }
+    &.hover-2 {
+      &:before,
+      &:after {
+        right: 0;
+      }
+    }
+    &.hover-3 {
+      &:before {
+        left: 50%;
+      }
+      &:after {
+        right: 50%;
+      }
+    }
+    &.hover-4 {
+      &:before {
+        left: 0;
+      }
+      &:after {
+        right: 0;
+      }
+    }
+  }
+  &:hover {
+    cursor: pointer;
+    .hover {
+      &:before,
+      &:after {
+        width: 100%;
+        opacity: 1;
+      }
+      &.hover-3,
+      &.hover-4 {
+        &:before,
+        &:after {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+.example-vert {  
+  color: #067302;
+  .hover {
+    &:before,
+    &:after {
+      content: "";
+      background-color: darken(rgb(6, 115, 2),5%); 
+    }
+    &.hover-1 {
+      &:before,
+      &:after {
+        left: 0;
+      }
+    }
+    &.hover-2 {
+      &:before,
+      &:after {
+        right: 0;
+      }
+    }
+    &.hover-3 {
+      &:before {
+        left: 50%;
+      }
+      &:after {
+        right: 50%;
+      }
+    }
+    &.hover-4 {
+      &:before {
+        left: 0;
+      }
+      &:after {
+        right: 0;
+      }
+    }
+  }
+  &:hover {
+    cursor: pointer;
+    .hover {
+      &:before,
+      &:after {
+        width: 100%;
+        opacity: 1;
+      }
+      &.hover-3,
+      &.hover-4 {
+        &:before,
+        &:after {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
 
 /* COULEURS DEGRADEES */
 
@@ -1016,39 +1176,3 @@ $vert-jaune: linear-gradient(to left,darkolivegreen lightgoldenrodyellow);
   
 }
 /* TEST CODES OC */
-.block {
-background-color: #15DEA5;
-  &__element {
-  color: #fff;
-  }
-  &--modifier {
-  background-color: #001534;
-  }
-}
-.nav {
-  padding-right: 6rem;
-  flex: 2 1 auto;
-  text-align: right;
-  nav__link {
-  display: inline;
-  font-size: 3rem;
-  padding-left: 1.5rem;
-  nav__link--active {
-  color: #001534;
-  }
-  }
-}
-.btn {
-  background-color: #001534;
-  color: #15DEA5;
-  padding: 1.5rem;
-}
-  
-.btn-wide {
-  width: 100%;
-}
-  
-/* And... */
-.btn-rounded {
-  border-radius: 3rem;
-}

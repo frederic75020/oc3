@@ -277,6 +277,7 @@ p {
   }
 }
 
+/* CATEGORIES ENTREE PLAT DESSERT */
 .partie {
   width: auto;
   height: auto;
@@ -315,6 +316,8 @@ p {
   }
 }
 
+/* -------------------------- */
+/* ELEMENTS DU MENU */
 .space-between {
   font-size: 0.9em;
   width: 80%;
@@ -334,10 +337,11 @@ p {
 
 @media (max-width: 767px) {
   .space-between {
-    font-size: 0.7rem;
+    font-size: 1.1rem;
   }
 }
 
+/* COLORATION ELEMENTS DU MENU */
 .space-between-marron {
   color: #cc6410;
 }
@@ -348,26 +352,6 @@ p {
 
 .space-between-bleu {
   color: #905BFD;
-  font-size: 0.9em;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media (max-width: 767px) {
-  .space-between-bleu {
-    font-size: 0.7rem;
-  }
 }
 
 .centre-groupe {
@@ -983,12 +967,8 @@ p {
   margin: 0 0 5px;
 }
 
-.example__marron {
-  color: green;
-}
-
 .example .hover {
-  font-size: 32px;
+  font-size: 1.2rem;
   text-align: center;
   margin: 0 auto;
   padding: 0;
@@ -1051,43 +1031,10 @@ p {
 
 .example-marron {
   color: #cc6410;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font: bold;
-  width: 30%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 0 5px;
-}
-
-.example-marron .hover {
-  font-size: 32px;
-  text-align: center;
-  margin: 0 auto;
-  padding: 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  position: relative;
 }
 
 .example-marron .hover:before, .example-marron .hover:after {
   content: "";
-  position: absolute;
-  bottom: -10px;
-  width: 0px;
-  height: 5px;
-  margin: 5px 0 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  -webkit-transition-duration: 0.75s;
-          transition-duration: 0.75s;
-  opacity: 0;
   background-color: #b4580e;
 }
 
@@ -1130,43 +1077,10 @@ p {
 
 .example-violet {
   color: #a6699b;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font: bold;
-  width: 30%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 0 5px;
-}
-
-.example-violet .hover {
-  font-size: 32px;
-  text-align: center;
-  margin: 0 auto;
-  padding: 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  position: relative;
 }
 
 .example-violet .hover:before, .example-violet .hover:after {
   content: "";
-  position: absolute;
-  bottom: -10px;
-  width: 0px;
-  height: 5px;
-  margin: 5px 0 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  -webkit-transition-duration: 0.75s;
-          transition-duration: 0.75s;
-  opacity: 0;
   background-color: #9a5b8f;
 }
 
@@ -1208,45 +1122,12 @@ p {
 }
 
 .example-bleu {
-  color: #905BFD;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font: bold;
-  width: 30%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 0 5px;
-}
-
-.example-bleu .hover {
-  font-size: 32px;
-  text-align: center;
-  margin: 0 auto;
-  padding: 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  position: relative;
+  color: #6E4CCC;
 }
 
 .example-bleu .hover:before, .example-bleu .hover:after {
   content: "";
-  position: absolute;
-  bottom: -10px;
-  width: 0px;
-  height: 5px;
-  margin: 5px 0 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  -webkit-transition-duration: 0.75s;
-          transition-duration: 0.75s;
-  opacity: 0;
-  background-color: #7f42fd;
+  background-color: #5e38c6;
 }
 
 .example-bleu .hover.hover-1:before, .example-bleu .hover.hover-1:after {
@@ -1283,6 +1164,190 @@ p {
 }
 
 .example-bleu:hover .hover.hover-3:before, .example-bleu:hover .hover.hover-3:after, .example-bleu:hover .hover.hover-4:before, .example-bleu:hover .hover.hover-4:after {
+  width: 50%;
+}
+
+.example-bleu-fonce {
+  color: #0128DD;
+}
+
+.example-bleu-fonce .hover:before, .example-bleu-fonce .hover:after {
+  content: "";
+  background-color: #0123c4;
+}
+
+.example-bleu-fonce .hover.hover-1:before, .example-bleu-fonce .hover.hover-1:after {
+  left: 0;
+}
+
+.example-bleu-fonce .hover.hover-2:before, .example-bleu-fonce .hover.hover-2:after {
+  right: 0;
+}
+
+.example-bleu-fonce .hover.hover-3:before {
+  left: 50%;
+}
+
+.example-bleu-fonce .hover.hover-3:after {
+  right: 50%;
+}
+
+.example-bleu-fonce .hover.hover-4:before {
+  left: 0;
+}
+
+.example-bleu-fonce .hover.hover-4:after {
+  right: 0;
+}
+
+.example-bleu-fonce:hover {
+  cursor: pointer;
+}
+
+.example-bleu-fonce:hover .hover:before, .example-bleu-fonce:hover .hover:after {
+  width: 100%;
+  opacity: 1;
+}
+
+.example-bleu-fonce:hover .hover.hover-3:before, .example-bleu-fonce:hover .hover.hover-3:after, .example-bleu-fonce:hover .hover.hover-4:before, .example-bleu-fonce:hover .hover.hover-4:after {
+  width: 50%;
+}
+
+.example-bleu-moyen {
+  color: #2980F2;
+}
+
+.example-bleu-moyen .hover:before, .example-bleu-moyen .hover:after {
+  content: "";
+  background-color: #1172f1;
+}
+
+.example-bleu-moyen .hover.hover-1:before, .example-bleu-moyen .hover.hover-1:after {
+  left: 0;
+}
+
+.example-bleu-moyen .hover.hover-2:before, .example-bleu-moyen .hover.hover-2:after {
+  right: 0;
+}
+
+.example-bleu-moyen .hover.hover-3:before {
+  left: 50%;
+}
+
+.example-bleu-moyen .hover.hover-3:after {
+  right: 50%;
+}
+
+.example-bleu-moyen .hover.hover-4:before {
+  left: 0;
+}
+
+.example-bleu-moyen .hover.hover-4:after {
+  right: 0;
+}
+
+.example-bleu-moyen:hover {
+  cursor: pointer;
+}
+
+.example-bleu-moyen:hover .hover:before, .example-bleu-moyen:hover .hover:after {
+  width: 100%;
+  opacity: 1;
+}
+
+.example-bleu-moyen:hover .hover.hover-3:before, .example-bleu-moyen:hover .hover.hover-3:after, .example-bleu-moyen:hover .hover.hover-4:before, .example-bleu-moyen:hover .hover.hover-4:after {
+  width: 50%;
+}
+
+.example-bleu-clair {
+  color: #2980F2;
+}
+
+.example-bleu-clair .hover:before, .example-bleu-clair .hover:after {
+  content: "";
+  background-color: #1172f1;
+}
+
+.example-bleu-clair .hover.hover-1:before, .example-bleu-clair .hover.hover-1:after {
+  left: 0;
+}
+
+.example-bleu-clair .hover.hover-2:before, .example-bleu-clair .hover.hover-2:after {
+  right: 0;
+}
+
+.example-bleu-clair .hover.hover-3:before {
+  left: 50%;
+}
+
+.example-bleu-clair .hover.hover-3:after {
+  right: 50%;
+}
+
+.example-bleu-clair .hover.hover-4:before {
+  left: 0;
+}
+
+.example-bleu-clair .hover.hover-4:after {
+  right: 0;
+}
+
+.example-bleu-clair:hover {
+  cursor: pointer;
+}
+
+.example-bleu-clair:hover .hover:before, .example-bleu-clair:hover .hover:after {
+  width: 100%;
+  opacity: 1;
+}
+
+.example-bleu-clair:hover .hover.hover-3:before, .example-bleu-clair:hover .hover.hover-3:after, .example-bleu-clair:hover .hover.hover-4:before, .example-bleu-clair:hover .hover.hover-4:after {
+  width: 50%;
+}
+
+.example-vert {
+  color: #067302;
+}
+
+.example-vert .hover:before, .example-vert .hover:after {
+  content: "";
+  background-color: #055a02;
+}
+
+.example-vert .hover.hover-1:before, .example-vert .hover.hover-1:after {
+  left: 0;
+}
+
+.example-vert .hover.hover-2:before, .example-vert .hover.hover-2:after {
+  right: 0;
+}
+
+.example-vert .hover.hover-3:before {
+  left: 50%;
+}
+
+.example-vert .hover.hover-3:after {
+  right: 50%;
+}
+
+.example-vert .hover.hover-4:before {
+  left: 0;
+}
+
+.example-vert .hover.hover-4:after {
+  right: 0;
+}
+
+.example-vert:hover {
+  cursor: pointer;
+}
+
+.example-vert:hover .hover:before, .example-vert:hover .hover:after {
+  width: 100%;
+  opacity: 1;
+}
+
+.example-vert:hover .hover.hover-3:before, .example-vert:hover .hover.hover-3:after, .example-vert:hover .hover.hover-4:before, .example-vert:hover .hover.hover-4:after {
   width: 50%;
 }
 
@@ -1395,48 +1460,4 @@ p {
 }
 
 /* TEST CODES OC */
-.block {
-  background-color: #15DEA5;
-}
-
-.block__element {
-  color: #fff;
-}
-
-.block--modifier {
-  background-color: #001534;
-}
-
-.nav {
-  padding-right: 6rem;
-  -webkit-box-flex: 2;
-      -ms-flex: 2 1 auto;
-          flex: 2 1 auto;
-  text-align: right;
-}
-
-.nav nav__link {
-  display: inline;
-  font-size: 3rem;
-  padding-left: 1.5rem;
-}
-
-.nav nav__link nav__link--active {
-  color: #001534;
-}
-
-.btn {
-  background-color: #001534;
-  color: #15DEA5;
-  padding: 1.5rem;
-}
-
-.btn-wide {
-  width: 100%;
-}
-
-/* And... */
-.btn-rounded {
-  border-radius: 3rem;
-}
 /*# sourceMappingURL=style.css.map */
