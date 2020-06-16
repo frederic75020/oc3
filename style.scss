@@ -19,8 +19,12 @@ $mobile-width: 480px;
   font-family: 'shortstack';
   src: url('typos/ShortStack-Regular.ttf');
 }
-
+@font-face {
+  font-family: 'dancing-script';
+  src: url('typos/dancingScript-Regular.ttf');
+}
 /* mixins media queries */
+
 @mixin desktop {
   @media (min-width: #{$desktop-width}) {
     @content;
@@ -40,8 +44,11 @@ $mobile-width: 480px;
 /* CORPS DE LA PAGE  */ 
 body {
   width: 100%;
-  margin: 0px;
   padding: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 150px;
   @include tablet {
   }
   @include mobile {
@@ -120,8 +127,11 @@ p {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }  
 }
-
 .prochainement {
   height: auto;
   width: 100%;
@@ -133,6 +143,8 @@ p {
   padding: 5%;
 }
 .texte-mentions {
+  font-family: "dancing-script";
+  font-size: 1.8em;
   display: flex;
   flex-direction: column;  
   text-align: justify;
@@ -148,8 +160,8 @@ p {
       margin: 0.5rem;
       margin-left: auto;
       margin-right: auto;
-      font-size: 0.9rem;
-      background-color: $fond-alt;
+      font-size: 1.2rem;
+      background-color: white;
       color: $typo-alt;
     }
     @include mobile {
@@ -159,8 +171,8 @@ p {
       margin: 0.5rem;
       margin-left: auto;
       margin-right: auto;
-      font-size: 0.9rem;
-      background-color: $fond-alt;
+      font-size: 1.2rem;
+      background-color: white;
       color: $typo-alt;
     }
 }
@@ -341,7 +353,7 @@ p {
 }
 .menu-lechic {
 
-  font-family: courgette;
+  font-family: "courgette";
   background-color: #FFF5FE;
   height: auto;
   width: 50%;
@@ -372,17 +384,20 @@ p {
     text-align: center;
     /* alignement vertical; texte */
     justify-content: center;
-    color: lightblue;
-    font-family: 'Times New Roman', Times, serif;
+    color: #0887fb;
+    font-family: "dancing-script";
     font-size: 0.5rem;
     padding: 1rem;
     margin: 1rem;
     border-radius: 15px;
-    border: 1px solid rgb(34, 34, 46);
-    background-color: rgb(34, 34, 46);
-    height: 30rem;
-    width: 30%;
+    border: 1px solid #edefef;
+    background-color: #edefef;
+    height: 20rem;
+    width: 25%;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+    @include mobile {
+      width: 75%;
+    }  
     &:hover {
       opacity: 0.5;
       transition: 400ms ease-in-out;
@@ -409,9 +424,12 @@ p {
     background-color:#fcdfdb;
     border: solid 1px #fcdfdb;
     border-radius: 15px;
-    height: 30rem;
-    width: 30%;
+    height: 20rem;
+    width: 25%;
     box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
+    @include mobile {
+      width: 75%;
+    }  
         &:hover {
             opacity: 0.7;
         }
@@ -436,9 +454,12 @@ p {
     background-color: #FFF5FE;
     border: 1px solid #FFF5FE;
     border-radius: 15px;
-    height: 30rem;
-    width: 30%;
+    height: 20rem;
+    width: 25%;
     box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
+    @include mobile {
+      width: 75%;
+    }  
     &:hover span {    
       transition: transform 400ms ease-in-out;    
       transform: scale(1.1);
@@ -465,8 +486,12 @@ p {
     background-color: white;
     border: 1px solid white;
     border-radius: 15px;
-    width: 30%;
+    width: 25%;
+    height: 20rem;
     box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
+    @include mobile {
+      width: 75%;
+    }  
     &:hover {
         opacity: 0.5;
         transition: transform 400ms ease-in-out;  
@@ -488,7 +513,7 @@ p {
     flex-direction: column;
     align-items: center;
     padding: 0.5rem 3rem;
-    margin: 1rem;
+    margin: 2rem;
     font-size: 1rem;
     border-radius: 20px;
 }
@@ -917,6 +942,12 @@ $vert-jaune: linear-gradient(to left,darkolivegreen lightgoldenrodyellow);
 
 .rouge-orange {
   background: linear-gradient(86deg, #f05060 30%, #f6916a 62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bleu-bleu {
+  
+  background: linear-gradient(165deg, #001585 0%, #13b4ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
