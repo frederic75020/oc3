@@ -7,6 +7,11 @@
   src: url("typos/Courgette-Regular.ttf");
 }
 
+@font-face {
+  font-family: 'shortstack';
+  src: url("typos/ShortStack-Regular.ttf");
+}
+
 /* mixins media queries */
 /* CORPS DE LA PAGE  */
 body {
@@ -100,7 +105,7 @@ p {
 
 .container {
   width: 100%;
-  height: 80%;
+  height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,12 +118,6 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  justify-items: center;
 }
 
 .prochainement {
@@ -412,9 +411,10 @@ p {
   width: auto;
 }
 
+/* MISE EN FORME MENUS */
 .menu-lapalette {
   font-family: fantasy;
-  background-color: lightgoldenrodyellow;
+  background-color: white;
   color: darkolivegreen;
   height: auto;
   width: 50%;
@@ -442,9 +442,9 @@ p {
 }
 
 .menu-lanote {
-  font-family: fantasy;
-  background-color: #FFF5FE;
-  color: darkolivegreen;
+  font-family: "shortstack";
+  background-color: #fcdfdb;
+  color: #3d1319;
   height: auto;
   width: 50%;
   margin-left: auto;
@@ -498,6 +498,7 @@ p {
   }
 }
 
+/* BOUTONS PAGE PRINCIPALE */
 .btn-ledelice {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -522,8 +523,8 @@ p {
   border-radius: 15px;
   border: 1px solid #22222e;
   background-color: #22222e;
-  height: 300px;
-  width: 150px;
+  height: 30rem;
+  width: 30%;
   -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
 }
@@ -544,6 +545,7 @@ p {
 }
 
 .btn-lanote {
+  font-family: "shortstack";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -559,15 +561,15 @@ p {
           justify-content: center;
   /* alignement horizontal */
   text-align: center;
-  color: white;
+  color: #3d1319;
   font-size: 0.5rem;
   padding: 1rem;
   margin: 1rem;
-  background-color: #af848b;
-  border: solid 1px #af848b;
+  background-color: #fcdfdb;
+  border: solid 1px #fcdfdb;
   border-radius: 15px;
-  height: 300px;
-  width: 150px;
+  height: 30rem;
+  width: 30%;
   -webkit-box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
 }
@@ -602,15 +604,16 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "courgette";
   color: #7a4949;
   font-size: 0.5rem;
   padding: 1rem;
   margin: 1rem;
-  background-color: #dbb1db;
-  border: 1px solid #dbb1db;
+  background-color: #FFF5FE;
+  border: 1px solid #FFF5FE;
   border-radius: 15px;
-  height: 300px;
-  width: 150px;
+  height: 30rem;
+  width: 30%;
   -webkit-box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
 }
@@ -646,14 +649,13 @@ p {
   text-align: center;
   color: lightgoldenrodyellow;
   font-size: 0.5rem;
-  padding: 1.2rem;
-  margin: rem;
+  padding: 1rem;
+  margin: 1rem;
   color: darkolivegreen;
-  background-color: lightgoldenrodyellow;
-  border: 1px solid lightgoldenrodyellow;
+  background-color: white;
+  border: 1px solid white;
   border-radius: 15px;
-  height: 300px;
-  width: 150px;
+  width: 30%;
   -webkit-box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
 }
@@ -700,6 +702,7 @@ p {
   border-radius: 20px;
 }
 
+/* BOUTONS FOOTER */
 .btn-contact {
   background-color: #2d7a73;
   color: #f7c853;
@@ -1243,6 +1246,21 @@ p {
 }
 
 /* COULEURS DEGRADEES */
+.rouge-orange {
+  background: linear-gradient(86deg, #f05060 30%, #f6916a 62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lechic-degrade {
+  /* standard gradient background */
+  background: -webkit-gradient(linear, left top, right top, from(#cc6410), color-stop(#a45be9), to(#905BFD));
+  background: linear-gradient(to right, #cc6410 0% 30%, #a45be9, #905BFD);
+  /* clip hackery */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .menu-degrade {
   display: -webkit-box;
   display: -ms-flexbox;
