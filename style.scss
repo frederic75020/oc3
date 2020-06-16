@@ -234,8 +234,9 @@ p {
     font-size: 0.7em;
     @include mobile {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
+      font-size: 0.9em;
     }  
 }
 
@@ -355,6 +356,28 @@ p {
 
   font-family: "courgette";
   background-color: #FFF5FE;
+  height: auto;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 25%;
+  padding: 2rem;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
+    @include mobile {
+    width: 85%; 
+    padding: 2%; 
+    }
+    @include tablet {
+      width: 80%;
+      font-size: 1.2em;
+    }
+}
+.menu-ledelice {
+
+  font-family: "dancing-script";
+  background-color: #edefef;
+  color: black;
   height: auto;
   width: 50%;
   margin-left: auto;
@@ -998,6 +1021,16 @@ $vert-jaune: linear-gradient(to left,darkolivegreen lightgoldenrodyellow);
   margin-top: 2%;
   margin-bottom: 2%;
   transform: rotate(180deg);
+}
+.img-flip-2 {
+  display: flex;
+  width: 30%; 
+  background-size: auto;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  transform: rotate(180deg) scaleY(-1);
+  
 }
 
 

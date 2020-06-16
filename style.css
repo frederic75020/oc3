@@ -304,13 +304,14 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    font-size: 0.9em;
   }
 }
 
@@ -515,6 +516,35 @@ p {
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .menu-lechic {
+    width: 80%;
+    font-size: 1.2em;
+  }
+}
+
+.menu-ledelice {
+  font-family: "dancing-script";
+  background-color: #edefef;
+  color: black;
+  height: auto;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 25%;
+  padding: 2rem;
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 767px) {
+  .menu-ledelice {
+    width: 85%;
+    padding: 2%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .menu-ledelice {
     width: 80%;
     font-size: 1.2em;
   }
@@ -1383,5 +1413,20 @@ p {
   margin-bottom: 2%;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.img-flip-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  background-size: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  -webkit-transform: rotate(180deg) scaleY(-1);
+          transform: rotate(180deg) scaleY(-1);
 }
 /*# sourceMappingURL=style.css.map */
