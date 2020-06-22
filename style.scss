@@ -311,11 +311,10 @@ p {
   flex-wrap: wrap;
   /* alignement horizontal du texte */
   text-align: center;
+  align-content: center;
   /* alignement vertical; texte */
   justify-content: center;
-  color: #0887fb;
-  font-family: "dancing-script";
-  font-size: 0.5rem;
+  font-size: 1.5rem;
   padding: 1rem;
   margin: 1rem;
   border-radius: 15px;
@@ -340,7 +339,6 @@ p {
 
 .btn-ledelice
 {       
-
     color: #0887fb;
     font-family: "dancing-script";
 }

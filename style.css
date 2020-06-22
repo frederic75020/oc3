@@ -424,13 +424,13 @@ p {
       flex-wrap: wrap;
   /* alignement horizontal du texte */
   text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   /* alignement vertical; texte */
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #0887fb;
-  font-family: "dancing-script";
-  font-size: 0.5rem;
+  font-size: 1.5rem;
   padding: 1rem;
   margin: 1rem;
   border-radius: 15px;
