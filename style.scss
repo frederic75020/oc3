@@ -293,158 +293,76 @@ p {
   font-family: "courgette";
   background-color: #FFF5FE;
 }
+
 .menu-ledelice {
 
   font-family: "dancing-script";
   background-color: #edefef;
   color: black;
-  height: auto;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
-  margin-bottom: 25%;
-  padding: 2rem;
-  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
-    @include mobile {
-    width: 85%; 
-    padding: 2%; 
-    }
-    @include tablet {
-      width: 80%;
-      font-size: 1.2em;
-    }
 }
 
 /* BOUTONS PAGE PRINCIPALE */ 
-.btn-ledelice
-{       
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    /* alignement horizontal du texte */
-    text-align: center;
-    /* alignement vertical; texte */
-    justify-content: center;
-    color: #0887fb;
-    font-family: "dancing-script";
-    font-size: 0.5rem;
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 15px;
-    border: 1px solid #edefef;
-    background-color: #edefef;
-    height: 20rem;
-    width: 25%;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
-    @include mobile {
-      width: 75%;
-    }  
-    &:hover {
-      opacity: 0.5;
-      transition: 400ms ease-in-out;
-      }
-    &:hover span {    
-      transition: transform 400ms ease-in-out;    
-      transform: scale(1.1);
-      }
-}
-.btn-lanote
-{   
-    font-family: "shortstack";
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    /* alignement vertical */
-    justify-content: center;
-    /* alignement horizontal */
-    text-align: center;
-    color: #3d1319;
-    font-size: 0.5rem;
-    padding: 1rem;
-    margin: 1rem;
-    background-color:#fcdfdb;
-    border: solid 1px #fcdfdb;
-    border-radius: 15px;
-    height: 20rem;
-    width: 25%;
-    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
-    @include mobile {
-      width: 75%;
-    }  
-        &:hover {
-            opacity: 0.7;
-        }
-        &:hover span {    
-        transition: transform 400ms ease-in-out;    
-        transform: scale(1.1);
-        }
-}
-.btn-lechic
-{       
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-family: "courgette";
-    color: rgb(122, 73, 73);
-    font-size: 0.5rem;
-    padding: 1rem;
-    margin: 1rem;
-    background-color: #FFF5FE;
-    border: 1px solid #FFF5FE;
-    border-radius: 15px;
-    height: 20rem;
-    width: 25%;
-    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
-    @include mobile {
-      width: 75%;
-    }  
-    &:hover span {    
-      transition: transform 400ms ease-in-out;    
-      transform: scale(1.1);
-      }
-    &:hover {
-        opacity: 0.7;
-    }
-}
-.btn-lapalette
-{       
-    font-family: fantasy;
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    /* alignement vertical */
-    justify-content: center;
-    text-align: center;
-    color:lightgoldenrodyellow;
-    font-size:0.5rem;
-    padding: 1rem;
-    margin: 1rem;
-    color: darkolivegreen;
-    background-color: white;
-    border: 1px solid white;
-    border-radius: 15px;
-    width: 25%;
-    height: 20rem;
-    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
-    @include mobile {
-      width: 75%;
-    }  
-    &:hover {
-        opacity: 0.5;
-        transition: transform 400ms ease-in-out;  
+.btn-generique
+{       
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* alignement horizontal du texte */
+  text-align: center;
+  /* alignement vertical; texte */
+  justify-content: center;
+  color: #0887fb;
+  font-family: "dancing-script";
+  font-size: 0.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 15px;
+  border: 1px solid #edefef;
+  background-color: #edefef;
+  height: 20rem;
+  width: 25%;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+  @include mobile {
+    width: 75%;
+  }  
+  &:hover {
+    opacity: 0.5;
+    transition: 400ms ease-in-out;
     }
-    &:hover span {    
+  &:hover span {    
     transition: transform 400ms ease-in-out;    
     transform: scale(1.1);
     }
 }
+
+
+.btn-ledelice
+{       
+
+    color: #0887fb;
+    font-family: "dancing-script";
+}
+.btn-lanote
+{   
+    font-family: "shortstack";
+    color: #3d1319;
+    background-color: #fcdfdb;
+}
+.btn-lechic
+{       
+    font-family: "courgette";
+    color: rgb(122, 73, 73);
+    background-color: #FFF5FE;
+}
+.btn-lapalette
+{       
+    font-family: fantasy;
+    color: darkolivegreen;
+    background-color: white;
+}
 .la-palette {
-  background-color: lightyellow;
+  background-color: white;
   color: green;
 }
 .btn-prochainement {
@@ -459,9 +377,6 @@ p {
     font-size: 1rem;
     border-radius: 20px;
 }
-
-/* BOUTONS FOOTER */
-
 .btn-contact {
     background-color: $fond-header-footer;
     color: $typo-header-footer;
@@ -486,7 +401,6 @@ p {
     }
 }
 /* animation avec frames */
-
 .btn-mentions {
     background-color: $fond-header-footer;
     color: $typo-header-footer;
@@ -1040,15 +954,6 @@ $animate: all 0.2s ease-in-out;
     }
   }
 }
-
-
-
-
-
-
-
-
-
 /* COULEURS DEGRADEES */
 
 $vert-jaune: linear-gradient(to left,darkolivegreen lightgoldenrodyellow);
