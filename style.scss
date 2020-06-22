@@ -5,7 +5,7 @@ $fond-alt:  rgb(188, 228, 224);
 $typo-alt: rgb(38, 82, 78);
 $entree-lechic: #cc6410 0% 30%;
 
-/* valeurs breaking points affichage */ 
+/* variables des valeurs de breaking points affichage */ 
 $tablet-width: 768px;
 $desktop-width: 1024px;
 $mobile-width: 480px;
@@ -23,8 +23,8 @@ $mobile-width: 480px;
   font-family: 'dancing-script';
   src: url('typos/dancingScript-Regular.ttf');
 }
-/* mixins media queries */
 
+/* mixins pour media queries */
 @mixin desktop {
   @media (min-width: #{$desktop-width}) {
     @content;
@@ -40,7 +40,6 @@ $mobile-width: 480px;
     @content;
   }
 }
-
 /* CORPS DE LA PAGE  */ 
 body {
   width: 100%;
@@ -54,7 +53,6 @@ body {
   @include mobile {
   } 
 }
-/* STYLE DES LIENS */
 a   {   
     text-decoration: none;
 }
@@ -105,21 +103,12 @@ p {
     @include mobile {
     }
 }
+/* ****************** */
 
+/* CLASSES */
 .brown {
   color: #cc6410;
 }
-/* bloc TEST */
-.test {
-  color: $typo-alt;
-  display: flex;
-  width: 80%;
-  text-align: justify;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10%;
-}
-
 .container {
   width: 100%;
   height: 50%;
@@ -176,7 +165,6 @@ p {
       color: $typo-alt;
     }
 }
-
 .main-page {
     width: 100%;
     margin-left: auto;
@@ -220,7 +208,6 @@ p {
       padding: 2%; 
       }
 }
-/* CATEGORIES ENTREE PLAT DESSERT */
 .partie {
     width: auto;
     height: auto;
@@ -239,9 +226,6 @@ p {
       font-size: 0.9em;
     }  
 }
-/* -------------------------- */
-
-/* ELEMENTS DU MENU */
 .space-between {
     font-size: 0.9em;
     width: 80%;
@@ -254,8 +238,6 @@ p {
       font-size: 1.1rem;
     }
 }
-/* COLORATION ELEMENTS DU MENU */
-
 .space-between-marron {
   color: #cc6410;
 }
@@ -265,7 +247,6 @@ p {
 .space-between-bleu {
   color: #905BFD;
 }
-
 .centre-groupe
 {
     display: flex;
@@ -279,12 +260,7 @@ p {
     border-top: 3px solid black;
     width: auto;
 }
-
-/* MISE EN FORME MENUS */ 
-.menu-lapalette {
-  font-family: fantasy;
-  background-color: white;
-  color: darkolivegreen;
+.menu-generique {
   height: auto;
   width: 50%;
   margin-left: auto;
@@ -301,49 +277,21 @@ p {
       width: 80%;
       font-size: 1.2em;
     }
+}
+.menu-lapalette {
+  font-family: fantasy;
+  background-color: white;
+  color: darkolivegreen;
 }
 .menu-lanote {
   font-family: "shortstack";
   background-color: #fcdfdb;
   color: #3d1319;
-  height: auto;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
-  margin-bottom: 25%;
-  padding: 2rem;
-  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
-    @include mobile {
-    width: 85%; 
-    padding: 2%; 
-    }
-    @include tablet {
-      width: 80%;
-      font-size: 1.2em;
-    }
-
 }
 .menu-lechic {
 
   font-family: "courgette";
   background-color: #FFF5FE;
-  height: auto;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
-  margin-bottom: 25%;
-  padding: 2rem;
-  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
-    @include mobile {
-    width: 85%; 
-    padding: 2%; 
-    }
-    @include tablet {
-      width: 80%;
-      font-size: 1.2em;
-    }
 }
 .menu-ledelice {
 
@@ -369,7 +317,6 @@ p {
 }
 
 /* BOUTONS PAGE PRINCIPALE */ 
-
 .btn-ledelice
 {       
     display: flex;
