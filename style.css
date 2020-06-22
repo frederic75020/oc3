@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* variables */
+/* variables couleurs*/
 /* variables des valeurs de breaking points affichage */
 /* typos */
 @font-face {
@@ -737,7 +737,7 @@ p {
   }
 }
 
-/* ANIMATION SOULIGNE */
+/* ANIMATION TRAIT SOULIGNE */
 .example {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -825,43 +825,6 @@ p {
   background-color: #b4580e;
 }
 
-.example-marron .hover.hover-1:before, .example-marron .hover.hover-1:after {
-  left: 0;
-}
-
-.example-marron .hover.hover-2:before, .example-marron .hover.hover-2:after {
-  right: 0;
-}
-
-.example-marron .hover.hover-3:before {
-  left: 50%;
-}
-
-.example-marron .hover.hover-3:after {
-  right: 50%;
-}
-
-.example-marron .hover.hover-4:before {
-  left: 0;
-}
-
-.example-marron .hover.hover-4:after {
-  right: 0;
-}
-
-.example-marron:hover {
-  cursor: pointer;
-}
-
-.example-marron:hover .hover:before, .example-marron:hover .hover:after {
-  width: 100%;
-  opacity: 1;
-}
-
-.example-marron:hover .hover.hover-3:before, .example-marron:hover .hover.hover-3:after, .example-marron:hover .hover.hover-4:before, .example-marron:hover .hover.hover-4:after {
-  width: 50%;
-}
-
 .example-violet {
   color: #a6699b;
 }
@@ -869,43 +832,6 @@ p {
 .example-violet .hover:before, .example-violet .hover:after {
   content: "";
   background-color: #9a5b8f;
-}
-
-.example-violet .hover.hover-1:before, .example-violet .hover.hover-1:after {
-  left: 0;
-}
-
-.example-violet .hover.hover-2:before, .example-violet .hover.hover-2:after {
-  right: 0;
-}
-
-.example-violet .hover.hover-3:before {
-  left: 50%;
-}
-
-.example-violet .hover.hover-3:after {
-  right: 50%;
-}
-
-.example-violet .hover.hover-4:before {
-  left: 0;
-}
-
-.example-violet .hover.hover-4:after {
-  right: 0;
-}
-
-.example-violet:hover {
-  cursor: pointer;
-}
-
-.example-violet:hover .hover:before, .example-violet:hover .hover:after {
-  width: 100%;
-  opacity: 1;
-}
-
-.example-violet:hover .hover.hover-3:before, .example-violet:hover .hover.hover-3:after, .example-violet:hover .hover.hover-4:before, .example-violet:hover .hover.hover-4:after {
-  width: 50%;
 }
 
 .example-bleu {
@@ -917,43 +843,6 @@ p {
   background-color: #5e38c6;
 }
 
-.example-bleu .hover.hover-1:before, .example-bleu .hover.hover-1:after {
-  left: 0;
-}
-
-.example-bleu .hover.hover-2:before, .example-bleu .hover.hover-2:after {
-  right: 0;
-}
-
-.example-bleu .hover.hover-3:before {
-  left: 50%;
-}
-
-.example-bleu .hover.hover-3:after {
-  right: 50%;
-}
-
-.example-bleu .hover.hover-4:before {
-  left: 0;
-}
-
-.example-bleu .hover.hover-4:after {
-  right: 0;
-}
-
-.example-bleu:hover {
-  cursor: pointer;
-}
-
-.example-bleu:hover .hover:before, .example-bleu:hover .hover:after {
-  width: 100%;
-  opacity: 1;
-}
-
-.example-bleu:hover .hover.hover-3:before, .example-bleu:hover .hover.hover-3:after, .example-bleu:hover .hover.hover-4:before, .example-bleu:hover .hover.hover-4:after {
-  width: 50%;
-}
-
 .example-bleu-fonce {
   color: #0128DD;
 }
@@ -961,43 +850,6 @@ p {
 .example-bleu-fonce .hover:before, .example-bleu-fonce .hover:after {
   content: "";
   background-color: #0123c4;
-}
-
-.example-bleu-fonce .hover.hover-1:before, .example-bleu-fonce .hover.hover-1:after {
-  left: 0;
-}
-
-.example-bleu-fonce .hover.hover-2:before, .example-bleu-fonce .hover.hover-2:after {
-  right: 0;
-}
-
-.example-bleu-fonce .hover.hover-3:before {
-  left: 50%;
-}
-
-.example-bleu-fonce .hover.hover-3:after {
-  right: 50%;
-}
-
-.example-bleu-fonce .hover.hover-4:before {
-  left: 0;
-}
-
-.example-bleu-fonce .hover.hover-4:after {
-  right: 0;
-}
-
-.example-bleu-fonce:hover {
-  cursor: pointer;
-}
-
-.example-bleu-fonce:hover .hover:before, .example-bleu-fonce:hover .hover:after {
-  width: 100%;
-  opacity: 1;
-}
-
-.example-bleu-fonce:hover .hover.hover-3:before, .example-bleu-fonce:hover .hover.hover-3:after, .example-bleu-fonce:hover .hover.hover-4:before, .example-bleu-fonce:hover .hover.hover-4:after {
-  width: 50%;
 }
 
 .example-bleu-moyen {
@@ -1009,43 +861,6 @@ p {
   background-color: #1172f1;
 }
 
-.example-bleu-moyen .hover.hover-1:before, .example-bleu-moyen .hover.hover-1:after {
-  left: 0;
-}
-
-.example-bleu-moyen .hover.hover-2:before, .example-bleu-moyen .hover.hover-2:after {
-  right: 0;
-}
-
-.example-bleu-moyen .hover.hover-3:before {
-  left: 50%;
-}
-
-.example-bleu-moyen .hover.hover-3:after {
-  right: 50%;
-}
-
-.example-bleu-moyen .hover.hover-4:before {
-  left: 0;
-}
-
-.example-bleu-moyen .hover.hover-4:after {
-  right: 0;
-}
-
-.example-bleu-moyen:hover {
-  cursor: pointer;
-}
-
-.example-bleu-moyen:hover .hover:before, .example-bleu-moyen:hover .hover:after {
-  width: 100%;
-  opacity: 1;
-}
-
-.example-bleu-moyen:hover .hover.hover-3:before, .example-bleu-moyen:hover .hover.hover-3:after, .example-bleu-moyen:hover .hover.hover-4:before, .example-bleu-moyen:hover .hover.hover-4:after {
-  width: 50%;
-}
-
 .example-bleu-clair {
   color: #2980F2;
 }
@@ -1053,43 +868,6 @@ p {
 .example-bleu-clair .hover:before, .example-bleu-clair .hover:after {
   content: "";
   background-color: #1172f1;
-}
-
-.example-bleu-clair .hover.hover-1:before, .example-bleu-clair .hover.hover-1:after {
-  left: 0;
-}
-
-.example-bleu-clair .hover.hover-2:before, .example-bleu-clair .hover.hover-2:after {
-  right: 0;
-}
-
-.example-bleu-clair .hover.hover-3:before {
-  left: 50%;
-}
-
-.example-bleu-clair .hover.hover-3:after {
-  right: 50%;
-}
-
-.example-bleu-clair .hover.hover-4:before {
-  left: 0;
-}
-
-.example-bleu-clair .hover.hover-4:after {
-  right: 0;
-}
-
-.example-bleu-clair:hover {
-  cursor: pointer;
-}
-
-.example-bleu-clair:hover .hover:before, .example-bleu-clair:hover .hover:after {
-  width: 100%;
-  opacity: 1;
-}
-
-.example-bleu-clair:hover .hover.hover-3:before, .example-bleu-clair:hover .hover.hover-3:after, .example-bleu-clair:hover .hover.hover-4:before, .example-bleu-clair:hover .hover.hover-4:after {
-  width: 50%;
 }
 
 .example-vert {
@@ -1101,44 +879,7 @@ p {
   background-color: #055a02;
 }
 
-.example-vert .hover.hover-1:before, .example-vert .hover.hover-1:after {
-  left: 0;
-}
-
-.example-vert .hover.hover-2:before, .example-vert .hover.hover-2:after {
-  right: 0;
-}
-
-.example-vert .hover.hover-3:before {
-  left: 50%;
-}
-
-.example-vert .hover.hover-3:after {
-  right: 50%;
-}
-
-.example-vert .hover.hover-4:before {
-  left: 0;
-}
-
-.example-vert .hover.hover-4:after {
-  right: 0;
-}
-
-.example-vert:hover {
-  cursor: pointer;
-}
-
-.example-vert:hover .hover:before, .example-vert:hover .hover:after {
-  width: 100%;
-  opacity: 1;
-}
-
-.example-vert:hover .hover.hover-3:before, .example-vert:hover .hover.hover-3:after, .example-vert:hover .hover.hover-4:before, .example-vert:hover .hover.hover-4:after {
-  width: 50%;
-}
-
-/* COULEURS DEGRADEES */
+/* DEGRADES*/
 .rouge-orange {
   background: linear-gradient(86deg, #f05060 30%, #f6916a 62%);
   -webkit-background-clip: text;
