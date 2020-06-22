@@ -133,8 +133,8 @@ p {
   padding: 5%;
 }
 .texte-mentions {
-  font-family: "dancing-script";
-  font-size: 1.8em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5em;
   display: flex;
   flex-direction: column;  
   text-align: justify;
@@ -296,7 +296,6 @@ p {
 }
 
 .menu-ledelice {
-
   font-family: "dancing-script";
   background-color: #edefef;
   color: black;
@@ -359,10 +358,6 @@ p {
     font-family: fantasy;
     color: darkolivegreen;
     background-color: white;
-}
-.la-palette {
-  background-color: white;
-  color: green;
 }
 .btn-prochainement {
     background-color: $fond-header-footer;
@@ -651,14 +646,20 @@ $animate: all 0.2s ease-in-out;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+/* TITRES */
 
 .lechic-degrade {
+    font-size: 1.5em;
     /* standard gradient background */
     background: linear-gradient(to right, #cc6410 0% 30%, #a45be9, #905BFD);
     /* clip hackery */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.titre-btn {
+  font-size: 1.2em;
+}
+
 .menu-degrade {
   display: flex;
   flex-direction: row;

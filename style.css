@@ -147,8 +147,8 @@ p {
 }
 
 .texte-mentions {
-  font-family: "dancing-script";
-  font-size: 1.8em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,11 +484,6 @@ p {
   font-family: fantasy;
   color: darkolivegreen;
   background-color: white;
-}
-
-.la-palette {
-  background-color: white;
-  color: green;
 }
 
 .btn-prochainement {
@@ -892,13 +887,19 @@ p {
   -webkit-text-fill-color: transparent;
 }
 
+/* TITRES */
 .lechic-degrade {
+  font-size: 1.5em;
   /* standard gradient background */
   background: -webkit-gradient(linear, left top, right top, from(#cc6410), color-stop(#a45be9), to(#905BFD));
   background: linear-gradient(to right, #cc6410 0% 30%, #a45be9, #905BFD);
   /* clip hackery */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.titre-btn {
+  font-size: 1.2em;
 }
 
 .menu-degrade {
