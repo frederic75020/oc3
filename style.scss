@@ -649,12 +649,12 @@ $animate: all 0.2s ease-in-out;
 /* TITRES */
 
 .lechic-degrade {
-    font-size: 1.5em;
-    /* standard gradient background */
-    background: linear-gradient(to right, #cc6410 0% 30%, #a45be9, #905BFD);
-    /* clip hackery */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-size: 1.5em;
+  /* standard gradient background */
+  background-color: linear-gradient(45deg, rgb(0, 56, 0), green);
+  /* clip hackery */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .titre-btn {
   font-size: 1.2em;
@@ -709,5 +709,15 @@ $animate: all 0.2s ease-in-out;
   margin-bottom: 2%;
   transform: rotate(180deg) scaleY(-1);
   
+}
+.orange-degrade {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* standard gradient background */
+  background: linear-gradient(45deg, #cc6410, #905BFD);
+  /* clip hackery */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /* TEST CODES OC */

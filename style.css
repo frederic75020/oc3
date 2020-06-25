@@ -567,95 +567,84 @@ p {
 
 @-webkit-keyframes wiggle {
   0% {
-    -webkit-transform: translate(1px, 0) rotate(0deg);
-            transform: translate(1px, 0) rotate(0deg);
+    -webkit-transform: translate(1px, 0);
+            transform: translate(1px, 0);
   }
   10% {
     -webkit-transform: translate(-1px, 0) rotate(-2deg);
             transform: translate(-1px, 0) rotate(-2deg);
   }
   20% {
-    -webkit-transform: translate(1px, 0) rotate 0deg;
-            transform: translate(1px, 0) rotate 0deg;
+    -webkit-transform: translate(1px, 0);
+            transform: translate(1px, 0);
   }
   30% {
     -webkit-transform: translate(-1px, 0) rotate(-2deg);
             transform: translate(-1px, 0) rotate(-2deg);
   }
   40% {
-    -webkit-transform: translate(1px, 0) rotate(0deg);
-            transform: translate(1px, 0) rotate(0deg);
+    -webkit-transform: translate(1px, 0);
+            transform: translate(1px, 0);
   }
   50% {
     -webkit-transform: translate(-1px, 0) rotate(-2deg);
             transform: translate(-1px, 0) rotate(-2deg);
   }
   60% {
-    -webkit-transform: translate(1px, 0) rotate 0deg;
-            transform: translate(1px, 0) rotate 0deg;
+    -webkit-transform: translate(1px, 0);
+            transform: translate(1px, 0);
   }
   70% {
     -webkit-transform: translate(-1px, 0) rotate -2deg;
             transform: translate(-1px, 0) rotate -2deg;
   }
   80% {
-    -webkit-transform: translate(1px, 0) rotate 0deg;
-            transform: translate(1px, 0) rotate 0deg;
+    -webkit-transform: translate(1px, 0);
+            transform: translate(1px, 0);
   }
   90% {
     -webkit-transform: translate(-1px, 0) rotate -2deg;
             transform: translate(-1px, 0) rotate -2deg;
   }
   100% {
-    -webkit-transform: translate(0, 0) rotate(0deg);
-            transform: translate(0, 0) rotate(0deg);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }
 
 @keyframes wiggle {
   0% {
     -webkit-transform: translate(1px, 0) rotate(0deg);
-            transform: translate(1px, 0) rotate(0deg);
   }
   10% {
     -webkit-transform: translate(-1px, 0) rotate(-2deg);
-            transform: translate(-1px, 0) rotate(-2deg);
   }
   20% {
-    -webkit-transform: translate(1px, 0) rotate 0deg;
-            transform: translate(1px, 0) rotate 0deg;
+    -webkit-transform: translate(1px, 0);
   }
   30% {
     -webkit-transform: translate(-1px, 0) rotate(-2deg);
-            transform: translate(-1px, 0) rotate(-2deg);
   }
   40% {
     -webkit-transform: translate(1px, 0) rotate(0deg);
-            transform: translate(1px, 0) rotate(0deg);
   }
   50% {
     -webkit-transform: translate(-1px, 0) rotate(-2deg);
-            transform: translate(-1px, 0) rotate(-2deg);
   }
   60% {
-    -webkit-transform: translate(1px, 0) rotate 0deg;
-            transform: translate(1px, 0) rotate 0deg;
+    -webkit-transform: translate(1px, 0);
   }
   70% {
     -webkit-transform: translate(-1px, 0) rotate -2deg;
-            transform: translate(-1px, 0) rotate -2deg;
   }
   80% {
     -webkit-transform: translate(1px, 0) rotate 0deg;
-            transform: translate(1px, 0) rotate 0deg;
   }
   90% {
     -webkit-transform: translate(-1px, 0) rotate -2deg;
-            transform: translate(-1px, 0) rotate -2deg;
   }
   100% {
     -webkit-transform: translate(0, 0) rotate(0deg);
-            transform: translate(0, 0) rotate(0deg);
   }
 }
 
@@ -891,8 +880,7 @@ p {
 .lechic-degrade {
   font-size: 1.5em;
   /* standard gradient background */
-  background: -webkit-gradient(linear, left top, right top, from(#cc6410), color-stop(#a45be9), to(#905BFD));
-  background: linear-gradient(to right, #cc6410 0% 30%, #a45be9, #905BFD);
+  background: linear-gradient(45deg, #003800, green);
   /* clip hackery */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -939,7 +927,7 @@ p {
   justify-items: center;
   /* standard gradient background */
   background: -webkit-gradient(linear, left top, right top, from(#cc6410), color-stop(#a45be9), to(#905BFD));
-  background: linear-gradient(to right, #cc6410 0% 30%, #a45be9, #905BFD);
+  background: -linear-gradient(to right, #cc6410 0% 30%, #a45be9, #905BFD);
   /* clip hackery */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -986,6 +974,24 @@ p {
   margin-bottom: 2%;
   -webkit-transform: rotate(180deg) scaleY(-1);
           transform: rotate(180deg) scaleY(-1);
+}
+
+.orange-degrade {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* standard gradient background */
+  background: linear-gradient(45deg, #cc6410, #905BFD);
+  /* clip hackery */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* TEST CODES OC */
